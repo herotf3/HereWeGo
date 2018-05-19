@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#d7d7d7"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_top_store"
+        android:background="@color/dark_bar"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/item_catalog_padding_top"
+        android:paddingTop="@dimen/item_catalog_padding_top"
+        android:weightSum="10">
+
+
+        <TextView
+            android:id="@+id/txt_mark"
+            android:layout_width="@dimen/mark_size"
+            android:layout_height="@dimen/mark_size"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/padding_left_mark"
+            android:background="@drawable/circle_bg"
+            android:gravity="center"
+            android:text="8"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/font_mark_size"
+            android:textStyle="bold"
+            android:visibility="gone"></TextView>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_left_mark"
+            android:layout_weight="9"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txt_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Quán chay phúc ấn an gia"
+                    android:textColor="#000"
+                    android:textSize="@dimen/name_size"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txt_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="163/21/3 Tô Hiến Thành, Quận 10, TP.HCM"
+                    android:textColor="@color/darker_layer"
+                    android:textSize="@dimen/text_size_address" />
+
+                <TextView
+                    android:id="@+id/txt_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/padding_top_store"
+                    android:textSize="@dimen/text_size_address" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/btn_item_bookmark"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:src="@drawable/ic_star_border" />
+    </LinearLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/img_place"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/image_place_height"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/placeholder" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dark_bar"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/padding_top_store"
+        android:paddingStart="@dimen/padding_left_mark"
+        android:paddingTop="@dimen/padding_top_store"
+        android:paddingEnd="10dp"
+        android:layout_alignBottom="@+id/img_place">
+
+        <ImageView
+            android:layout_width="@dimen/size_icon_message"
+            android:layout_height="@dimen/size_icon_message"
+            android:layout_marginRight="@dimen/padding_top_store"
+            app:srcCompat="@drawable/icon_views" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="256"
+            android:textSize="@dimen/text_size_address"
+            android:id="@+id/tv_voted_num"
+            android:textColor="@color/darker_layer"/>
+
+        <ImageView
+            android:layout_width="@dimen/size_icon_message"
+            android:layout_height="@dimen/size_icon_message"
+            android:layout_marginLeft="@dimen/item_catalog_width"
+            android:layout_marginRight="@dimen/padding_top_store"
+            app:srcCompat="@drawable/icon_cmt" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="928"
+            android:textSize="@dimen/text_size_address"
+            android:id="@+id/tv_cmt_num"
+            android:textColor="@color/darker_layer"/>
+
+        <TextView
+            android:id="@+id/tvDistance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/padding_top_store"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="2.5 km"
+            android:textSize="@dimen/text_size_address"
+            android:textColor="@color/darker_layer"
+            />
+
+        <ImageButton
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            app:srcCompat="@drawable/ic_near_me_black_24dp"
+            android:id="@+id/icon_map"
+            android:tint="@color/darker_layer"
+            />
+
+    </LinearLayout>
+</RelativeLayout>
+
+
+
+
+</LinearLayout>

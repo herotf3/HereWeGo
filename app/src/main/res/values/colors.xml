@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#c30b2d</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="lighter_gray">#96cacaca</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="color_text_orange">#f4501c</color>
+    <color name="color_hint">#ff5722</color>
+    <color name="darker_layer">#97000000</color>
+    <color name="dark_layer_2">#5a000000</color>
+    <color name="edit_text_login">#ff8410</color>
+    <color name="tab_login_color">#cfa94900</color>
+    <color name="tab_text_header_selected">#ffffff</color>
+    <color name="orange_tranparent">#b6af4b16</color>
+    <color name="black_transparent">#c8252525</color>
+    <color name="color_background_darker">#d63900</color>
+    <color name="background_dark_black">#bfbfbf</color>
+    <color name="dark">#aae37a2a</color>
+    <color name="status_bar">#1b6c81</color>
+    <color name="second_color">#498fff</color>
+    <color name="first_orange_color">#f26226</color>
+    <color name="white_trans">#dcffffff</color>
+    <color name="dark_background">#e1e1e1</color>
+    <color name="dark_bar">#e5ffffff</color>
+    <color name="text_gray">#dfdf</color>
+</resources>

@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Couplace</string>
+    <string name="sologan">Be the best supplier.\nHealthy - Delicious \nEat now, food now!</string>
+    <string name="signup">Đăng ký</string>
+    <string name="signin">Đăng nhập</string>
+    <string name="title_activity_home">Home</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_logout">Đăng xuất</string>
+
+    <!--DATABASE REFERENCES STRING IN FIRE BASE (NODE) -->
+    <string name="DB_Categories">PlaceCategories</string>
+    <string name="DB_Places">Places</string>
+    <string name="empty_list_message">Xin lỗi.  Không có địa điểm nào trong danh mục</string>
+    <string name="openning">Đang mở cửa</string>
+    <string name="add_place">Thêm vào danh mục</string>
+    <string name="random_content">Nhà Rồng được khởi công xây dựng ngày 4 tháng 3 năm 1863, do \"Công ty vận tải đường biển\" xây cất để làm nơi ở cho viên Tổng quản lý và nơi bán vé tàu. Nóc nhà gắn hình rồng, ở giữa thay vì trái châu thì là chiếc phù hiệu mang hình \"Đầu ngựa và chiếc mỏ neo\". Phù hiệu \"Đầu ngựa\" hàm chỉ thời trước bên Pháp, công ty này chuyên lãnh chở đường bộ với ngựa kéo xe, còn \"Mỏ neo\" tượng trưng cho tàu thuyền. Trụ sở công ty được giới bình dân gọi là Nhà Rồng, có nhiều thuyết về cái tên này: có thuyết nói rằng vì có gắn đôi rồng lớn bằng đất nung tráng men xanh trên nóc nhà,[1] một thuyết khác cho rằng khác là Nhà Rồng có nghĩa là Gia Long với Nhà là Gia, Rồng là Long, bến Nhà Rồng được người Pháp đặt để nhớ tới quan hệ của vua Gia Long với nước Pháp.[2] Người lớn tuổi gọi tên là Sở Ông Năm, vì hãng tàu biển này do quan năm Pháp Domergue đứng ra sáng lập.   Bến Nhà Rồng về đêm Vào tháng 10 năm 1865, người Pháp đã cho dựng cột cờ Thủ Ngữ. Từ \"Thủ ngữ\" có nghĩa là sở canh tuần tàu biển. Cột cờ treo cờ hiệu để cho tàu thuyền ra vào Cảng nên biết vào ngay hay chờ đợi.   Cột cờ Thủ Ngữ Năm 1893, trụ sở công ty Nhà Rồng dùng đèn điện, dùng bóng đèn 16 nến, sáng leo lét, kém xa mấy ngọn đèn lồng thắp dầu lửa mà tòa đô chính cho thắp thử ở đường Catina (Đồng Khởi).  Gần cuối năm 1899, công ty được phép xây cất bến cho tàu cập vào. Bến lót ván dày, đặt trên trụ sắt dọc theo mé sông 42 mét (phía tàu cập vào). Bến này cách bến kia 18 mét. Bề ngang của mỗi bến vào phía trong bờ là 8 mét. Từ bờ ra bến có cầu rộng 10 mét. Ban đầu xây hai bến rồi xây thêm bến thứ ba.  Năm 1919, công ty được phép xây bến bằng xi măng cốt sắt, nhưng không thực hiện được, phải đến tháng 3 năm 1930 mới hoàn thành bến mới, chỉ một bến nhưng dài tới 430 mét.  Toàn bộ kiến trúc xưa của tòa trụ sở thương cảng Nhà Rồng hầu như còn nguyên vẹn cho đến ngày nay.</string>
+    <string name="DB_Bookmarks">Bookmarks</string>
+    <!-- Toolbar titles when navigation menu item is selected -->
+    <string-array name="nav_item_titles">
+        <item>Danh mục</item>
+        <item>Nổi bật</item>
+        <item>Bộ sưu tập</item>
+        <item>Notifications</item>
+        <item>Settings</item>
+    </string-array>
+</resources>

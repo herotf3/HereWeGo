@@ -1,0 +1,21 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/color_hint</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/color_text_orange</item>
+        <item name="android:statusBarColor">@color/status_bar</item>
+
+    </style>
+
+    <style name="MyLoginEditext">
+        <item name="android:colorControlNormal">#d2c5bd</item>
+        <item name="android:colorControlActivated">#ffffff</item>
+        <item name="android:colorControlHighlight">#eb0064a7</item>
+    </style>
+
+    <style name="myTheme" parent="AppTheme" />
+
+</resources>

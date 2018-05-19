@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_width="@dimen/info_window_size"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_top_store"
+        android:background="@android:color/holo_green_dark"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/item_catalog_padding_top"
+        android:paddingTop="@dimen/item_catalog_padding_top"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_info_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Quán chay phúc ấn an gia"
+                    android:textSize="@dimen/name_size"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_info_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="163/21/3 Tô Hiến Thành, Quận 10, TP.HCM"
+                    android:textSize="@dimen/text_size_address"
+                    android:textColor="@color/text_gray"
+                    android:gravity="center"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/img_map_place"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/image_place_height"
+            android:scaleType="centerCrop"
+            android:src="@drawable/placeholder"
+            android:layout_alignParentTop="true"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/dark_layer_2"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/padding_top_store"
+            android:paddingStart="@dimen/padding_left_mark"
+            android:paddingTop="@dimen/padding_top_store"
+            android:paddingEnd="10dp"
+            android:layout_alignBottom="@+id/img_map_place">
+
+            <ImageView
+                android:layout_width="@dimen/size_icon_message"
+                android:layout_height="@dimen/size_icon_message"
+                android:layout_marginRight="@dimen/padding_top_store"
+                app:srcCompat="@drawable/icon_views" />
+
+            <TextView
+                android:id="@+id/tv_info_voted"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="256"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/text_size_address" />
+
+            <ImageView
+                android:layout_width="@dimen/size_icon_message"
+                android:layout_height="@dimen/size_icon_message"
+                android:layout_marginLeft="@dimen/item_catalog_width"
+                android:layout_marginRight="@dimen/padding_top_store"
+                app:srcCompat="@drawable/icon_cmt" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="928"
+                android:textSize="@dimen/text_size_address"
+                android:id="@+id/tv_info_cmt"
+                android:textColor="#dfdf"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

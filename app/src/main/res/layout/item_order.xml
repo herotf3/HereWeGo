@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/cardview_magin"
+    android:elevation="@dimen/cardview_elvation"
+    >
+
+    <LinearLayout
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="9"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/order_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="#1233123"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold|italic"
+                android:gravity="center_vertical|start"
+                />
+            <TextView
+                android:id="@+id/order_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Status"
+                android:layout_marginStart="10dp"
+                android:textStyle="italic"
+                android:gravity="center_vertical|start"
+                android:textColor="@color/first_orange_color"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_orderAddress"
+                android:text="414 Duong Ba trac"
+                android:layout_marginStart="10dp"
+                />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical|end"
+            android:layout_marginRight="18dp"
+            android:id="@+id/cart_itemCount"/>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

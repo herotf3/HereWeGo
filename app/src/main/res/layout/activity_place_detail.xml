@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.asus.travisor.Activity.PlaceDetailActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/image_place_height">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/imv_detail"
+                android:src="@drawable/placeholder"
+                android:scaleType="centerCrop"/>
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/slide_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:backgroundTint="#64383838"
+                app:srcCompat="@drawable/ic_chevron_left"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"/>
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/slide_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:backgroundTint="#64383838"
+                app:srcCompat="@drawable/ic_chevron_right"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="10dp"/>
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/tv_detail_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/header"
+            android:textColor="@color/darker_layer"
+            android:text="Name of Place"
+            android:textStyle="bold"
+            android:paddingTop="10dp"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/tv_detail_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="414/20 Duong Ba Trac,p2, q8, tp Ho Chi Minh"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:textColor="@android:color/holo_green_light"/>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff">
+
+            <TextView
+                android:id="@+id/tv_detail_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxHeight="220dp"
+                android:minHeight="@dimen/image_place_height"
+                android:paddingBottom="10dp"
+                android:paddingEnd="10dp"
+                android:paddingStart="15dp"
+                android:paddingTop="8dp"
+                android:text="@string/random_content"
+                android:textAlignment="textStart" />
+        </ScrollView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/dark_bar"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/padding_top_store"
+            android:paddingStart="@dimen/padding_left_mark"
+            android:paddingTop="@dimen/padding_top_store"
+            android:paddingEnd="10dp">
+
+            <ImageView
+                android:layout_width="@dimen/size_icon_message"
+                android:layout_height="@dimen/size_icon_message"
+                android:layout_marginRight="@dimen/padding_top_store"
+                app:srcCompat="@drawable/icon_views" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="256"
+                android:textSize="@dimen/text_size_address"
+                android:id="@+id/tv_voted_num"
+                android:textColor="@color/text_gray"/>
+
+            <ImageView
+                android:layout_width="@dimen/size_icon_message"
+                android:layout_height="@dimen/size_icon_message"
+                android:layout_marginLeft="@dimen/item_catalog_width"
+                android:layout_marginRight="@dimen/padding_top_store"
+                app:srcCompat="@drawable/icon_cmt" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="928"
+                android:textSize="@dimen/text_size_address"
+                android:id="@+id/tv_cmt_num"
+                android:textColor="#dfdf"/>
+
+            <TextView
+                android:id="@+id/tvDistance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/padding_top_store"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="2.5 km"
+                android:textSize="@dimen/text_size_address"
+                android:textColor="@color/darker_layer"
+                />
+
+            <ImageButton
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                app:srcCompat="@drawable/ic_near_me_black_24dp"
+                android:id="@+id/icon_map"
+                android:tint="#bebebe"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:id="@+id/btn_detail_bookmark"
+                android:textColor="@color/com_facebook_blue"
+                android:text="Bookmark"
+                android:textAllCaps="false"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:id="@+id/btn_detail_vote"
+                android:textColor="@color/com_facebook_blue"
+                android:text="Đánh giá"
+                android:textAllCaps="false"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

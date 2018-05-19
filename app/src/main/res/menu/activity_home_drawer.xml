@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_menu"
+            android:icon="@drawable/ic_categories"
+            android:title="Danh mục" />
+        <item
+            android:id="@+id/nav_hot"
+            android:icon="@drawable/ic_whathot"
+            android:title="Địa điểm Hot" />
+        <item
+            android:id="@+id/nav_collection"
+            android:icon="@drawable/ic_collections"
+            android:title="Danh sách yêu thích" />
+        <item
+            android:id="@+id/nav_nearme"
+            android:icon="@drawable/ic_near_me_black_24dp"
+            android:title="Gần tôi" />
+        <item
+            android:id="@+id/nav_signOut"
+            android:icon="@drawable/ic_exit"
+            android:title="Đăng xuất" />
+    </group>
+
+    <item android:title="Social">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item>
+
+</menu>
